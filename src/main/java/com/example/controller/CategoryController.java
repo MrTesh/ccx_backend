@@ -61,6 +61,7 @@ public class CategoryController {
             String s = decodeUrl(ids);
             List<Long> arrayOfIds =  fromStringUrlToInt(s);
             return new ResponseEntity<>(categoryRepository.findAllById(arrayOfIds),  HttpStatus.OK);
+
         }
     }
 
